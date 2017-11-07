@@ -1,34 +1,61 @@
-<div class="jumbotron text-center ttl">
-    <h1>Eat Da Burger !</h1>
-    <p class="f-style"><span class="glyphicon glyphicon-cutlery"></span> There is no sincerer love than the love of food.</p>
-</div>
 <div class="container">
     <div class="row">
-        <div class="col-md-6 text-center ip">
-            <div class="card">
-                <div class="card-body">
-                    <form class="create-form">
-                        <div class="form-group">
-                            <h4 class="card-title ttl-color"><label for="burgerName">Enter Burger Name: </label></h4>
-                            <input type="text" id="name" name="burgerName">
-                        </div>
-                        <button type="submit" class="btn add">Add a Burger</button>
-                    </form>
-                </div>
-            </div>
+        <div class="jumbotron text-center ttl">
+            <h1>Eat Da Burger !</h1>
+            <p class="f-style"><span class="glyphicon glyphicon-cutlery"></span> There is no 	sincerer love than the love of food.</p>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-4 bg">
+        <div class="col-md-2 col-sm-2 col-xs-2">
+            <img src="http://www.seriouseats.com/recipes/assets_c/2015/07/20150728-homemade-whopper-food-lab-35-thumb-1500xauto-425129.jpg" class="img img-responsive" alt="burger image">
+        </div>
+
+        <div class="col-md-2 col-sm-2 col-xs-2">
+            <img src="https://s3.amazonaws.com/disneysprings-prod-content/wp-content/uploads/2016/05/10182906/D-Luxe-Southern-Burger-Listing-720x540-ee9230.jpg" class="img img-responsive" alt="burger image">
+        </div>
+
+        <div class="col-md-2 col-sm-2 col-xs-2">
+            <img src="https://d1nb1drbrte2j1.cloudfront.net/wp-content/uploads/2015/11/throwback-burger.jpg" class="img img-responsive" alt="burger image">
+        </div>
+
+        <div class="col-md-2 col-sm-2 col-xs-2">
+            <img src="http://www.seriouseats.com/recipes/assets_c/2015/07/20150728-homemade-whopper-food-lab-35-thumb-1500xauto-425129.jpg" class="img img-responsive" alt="burger image">
+        </div>
+
+        <div class="col-md-2 col-sm-2 col-xs-2">
+            <img src="https://s3.amazonaws.com/disneysprings-prod-content/wp-content/uploads/2016/05/10182906/D-Luxe-Southern-Burger-Listing-720x540-ee9230.jpg" class="img img-responsive" alt="burger image">
+        </div>
+
+        <div class="col-md-2 col-sm-2 col-xs-2">
+            <img src="https://d1nb1drbrte2j1.cloudfront.net/wp-content/uploads/2015/11/throwback-burger.jpg" class="img img-responsive" alt="burger image">
+        </div>
+    </div>
+    <div class="row sect">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 text-center ip">
+            <form class="create-form">
+                <div class="form-group">
+                    <h4 class="card-title ttl-color"><label for="burgerName">Enter Burger Name: </label></h4>
+                    <input type="text" id="name" name="burgerName">
+                </div>
+                <button type="submit" class="btn add">Add a Burger</button>
+            </form>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-6 jumbotron bg">
             <ul>
                 {{#each burgers}}
                 {{#unless devoured}}
                 <li>
                     <div class="row">
-                        <div class="col">
+                        <div class="col-md-6">
                             {{ burger_name }}
                         </div>
-                        <div class="col">
+                        <div class="col-md-2">
                             <button class="btn devour-btn" data-id={{id}} data-status={{devoured}}>Devour It!</button>
                         </div>
                     </div>
@@ -38,7 +65,7 @@
             </ul>
         </div>
 
-        <div class="col-md-3 bg">
+        <div class="col-md-4 jumbotron bg">
             <ul>
                 {{#each burgers}}
                 {{#if devoured}}
@@ -49,6 +76,7 @@
                 {{/each}}
             </ul>
         </div>
+        <div class="col-md-1"></div>
     </div>
 </div>
 <footer class="footer text-center">

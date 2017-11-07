@@ -3,19 +3,20 @@
 }
 
 body {
-    background-image: url("http://wallarthd.com/wp-content/uploads/2014/12/Burger-Is-Hamburger-Wallpaper-Picture.jpg");
-    /*background-repeat: no-repeat;*/
+    background: #F7971E;
+    background: -webkit-linear-gradient(to right, #FFD200, #F7971E);
+    background: linear-gradient(to right, #FFD200, #F7971E);
 }
 
 .ttl {
     background: none;
-    width: 590px;
+    /* width: 590px;*/
     margin: 0 auto;
     padding: 0px;
 }
 
     .ttl h1, p {
-        color: #1ABC9C;
+        color: #148F77;
         margin: 0px;
         padding: 2px;
     }
@@ -25,7 +26,6 @@ h1 {
 }
 
 .ttl-color {
-    color: #C90B8D;
     display: inline-block;
 }
 
@@ -37,11 +37,7 @@ h1 {
     padding: 3px;
     margin-left: 7px;
     font-weight: bold;
-    background-color: #C90B8D;
-}
-
-#name {
-    border: 1px solid #C90B8D;
+    background-color: #71949e;
 }
 
 .ip {
@@ -49,6 +45,21 @@ h1 {
 }
 
 .bg {
-    background-color: #C90B8D;
+    background: #2a5f6e;
+    background: -webkit-linear-gradient(to right, #71B280, #2a5f6e);
+    background: linear-gradient(to right, #71B280, #2a5f6e);
     margin-right: 25px;
+    font-weight: bold;
+}
+
+.sect {
+    margin-top: 70px;
+}
+ul {
+  list-style-type: none;
+  margin: 7px;
+  width:100%;
+}
+.devour-btn{
+    margin-bottom: 7px;
 }
