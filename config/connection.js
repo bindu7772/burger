@@ -10,6 +10,18 @@ var connection = mysql.createConnection({
     password: "root",
     database: "burgers_db"
 });
+
+if(process.env.JAWsDB_URL){
+	connection = mysql.createConnection(process.env.JAWsDB_URL);
+}else{
+	connection = mysql.createConnection({
+		host: 'localhost',
+		user: 'root',
+		password: 'root',
+		database: 'burgers_db'
+	});
+};
+
 connection.connect(function (err) {
     if (err) throw err;
     console.log("connected as id " + connection.threadId + "\n");
